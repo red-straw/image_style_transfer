@@ -104,10 +104,10 @@ function detectGesture() {
 function a() {
   console.log("주먹 감지");
   const currentTime = millis(); // 현재 시간 가져오기
-  if (currentTime - lastPhotoTime > 3000) { // 마지막 사진 찍은 시간과의 차이가 3초 이상인 경우에만 사진 찍기
+  if (currentTime - lastPhotoTime > 4000) { // 마지막 사진 찍은 시간과의 차이가 3초 이상인 경우에만 사진 찍기
     setTimeout(function() {
       saveCanvas('fist_detection', 'png');
-    }, 5000);
+    }, 4000);
     lastPhotoTime = currentTime; // 마지막 사진 찍은 시간 업데이트
   }
 }
